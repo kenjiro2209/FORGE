@@ -8,3 +8,16 @@ requires-python = ">=3.13"
 authors = [
     { name = "Kenjiro" }
 ]
+dependencies = [
+    "rich>=15.0.0",
+    "typer>=0.27.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+    "ruff>=0.15.21",
+]
+
+[project.scripts]
+forge = "forge.cli.main:app"
