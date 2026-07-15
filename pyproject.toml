@@ -1,0 +1,10 @@
+[project]
+name = "forge"
+version = "0.1.0"
+description = "AI-assisted engineering platform"
+readme = "README.md"
+requires-python = ">=3.13"
+
+authors = [
+    { name = "Kenjiro" }
+]
