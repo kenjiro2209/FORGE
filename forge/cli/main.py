@@ -1,12 +1,16 @@
 import typer
 
 from forge.core.version import VERSION
-
+from forge.cad.commands import app as cad_app
 app = typer.Typer(
     help="Forge - AI Engineering Platform"
 )
 
-
+app.add_typer(
+    cad_app,
+    name="cad",
+    help="CAD tools powered by FreeCAD",
+) 
 @app.callback(invoke_without_command=True)
 def main(
     version: bool = typer.Option(
